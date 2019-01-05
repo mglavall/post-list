@@ -1,0 +1,15 @@
+.post {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(50, 50, 93, 0.1);
+  cursor: pointer;
+}
+
+.post:hover {
+  background-color: #fff8e8;
+}
+
+.author-img {
+  border-radius: 50%;
+  width: 2.5rem;
+}
