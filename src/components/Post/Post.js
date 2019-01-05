@@ -2,7 +2,7 @@ import React from "react";
 import "./Post.scss";
 import userPhoto from "../../assets/user1.jpg";
 
-const post = props => {
+const post = props => (
   <div className="d-flex mb-2">
     <div className="col-1">
       <img className="author-img" alt="Author" src={userPhoto} />
@@ -13,7 +13,7 @@ const post = props => {
         <div>{props.body}</div>
       </div>
     </article>
-  </div>;
-};
+  </div>
+);
 
 export default post;
