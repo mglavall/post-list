@@ -27,3 +27,16 @@
     opacity: 1;
   }
 }
+
+.author-block {
+  align-items: center;
+  @media (min-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.author-name {
+  @media (max-width: 768px) {
+    margin-left: 16px;
+  }
+}

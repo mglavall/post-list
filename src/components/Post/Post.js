@@ -17,15 +17,21 @@ class Post extends Component {
   render() {
     return (
       <div className="d-flex flex-wrap mb-2">
-        <div className="col-1">
-          <img
-            className="author-img mb-1"
-            alt="Author"
-            src={userPhoto}
-            onMouseEnter={this.onImgMouseEnterHandler.bind(this)}
-            onMouseLeave={this.onImgMouseLeaveHandler.bind(this)}
-          />
-          <span className={"author-name" + (this.state.hoveredImg ? " hovered" : "")}>Alicia</span>
+        <div className="col-1 d-flex author-block p-1">
+          <div>
+            <img
+              className="author-img"
+              alt="Author"
+              src={userPhoto}
+              onMouseEnter={this.onImgMouseEnterHandler.bind(this)}
+              onMouseLeave={this.onImgMouseLeaveHandler.bind(this)}
+            />
+          </div>
+          <div>
+            <span className={"author-name" + (this.state.hoveredImg ? " hovered" : "")}>
+              Alicia
+            </span>
+          </div>
         </div>
         <article className="post col-11 p-2">
           <div className="text-size-2 mb-2">{this.props.title}</div>
