@@ -1,6 +1,12 @@
 @font-face {
   font-family: ApercuMono;
-  src: url(ApercuMono.otf);
+  src: url(assets/ApercuMono.otf);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 body {
