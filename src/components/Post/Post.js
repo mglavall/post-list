@@ -17,7 +17,7 @@ class Post extends Component {
   render() {
     return (
       <div className="d-flex flex-wrap mb-2">
-        <div className="col-1 d-flex author-block p-1">
+        <div className="col-1 d-flex author-block p-1 pr-3">
           <div>
             <img
               className="author-img"
