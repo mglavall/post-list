@@ -16,3 +16,14 @@
   border-radius: 50%;
   width: 2.5rem;
 }
+
+.author-name {
+  position: relative;
+  font-size: 12px;
+  opacity: 0;
+  transition: 0.3s;
+
+  &.hovered {
+    opacity: 1;
+  }
+}
