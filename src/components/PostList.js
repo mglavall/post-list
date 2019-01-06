@@ -7,9 +7,15 @@ class PostList extends Component {
     posts: []
   };
   componentDidMount() {
-    axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {
-      this.setState({ posts: response.data });
-    });
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts")
+      .then(response => {
+        this.setState({ posts: response.data });
+      })
+      .catch(error => {
+        //Error handling
+        console.log(error);
+      });
   }
   render() {
     const posts = this.state.posts.map(post => {

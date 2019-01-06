@@ -3,12 +3,10 @@ import "./Post.scss";
 import userPhoto from "../../assets/user1.jpg";
 
 class Post extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      hoveredImg: false
-    };
-  }
+  state = {
+    hoveredImg: false
+  };
+
   onImgMouseEnterHandler() {
     this.setState({ hoveredImg: true });
   }
